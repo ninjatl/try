@@ -9411,10 +9411,10 @@
                         map: I0O01,
                         bumpMap: I0O01,
                         specularMap: I0O01,
-                        specular: 6316128,
+                        specular: 0,
                         shininess: 20,
                         bumpScale: .1,
-                        color: 6316128,
+                        color: 0,
                         emissive: ll10I.hsvToRgbHex(this.hue, .5, 1),
                         emissiveMap: OOlI1
                     })
@@ -11455,6 +11455,18 @@
                         emissive: ll10I.hsvToRgbHex(this.hue, .5, 1),
                         emissiveMap: OOlI1
                     })
+                }, t.prototype.buildInvisibleMaterial = function() {
+                    return this.material = new THREE.MeshPhongMaterial({
+                        map: I0O01,
+                        bumpMap: I0O01,
+                        specularMap: I0O01,
+                        specular: 0,
+                        shininess: 20,
+                        bumpScale: .1,
+                        color: 0,
+                        emissive: ll10I.hsvToRgbHex(this.hue, .5, 1),
+                        emissiveMap: OOlI1
+                    })
                 }, t.prototype.buildCarbonMaterial = function() {
                     return this.material = new THREE.MeshPhongMaterial({
                         map: I0O01,
@@ -12712,25 +12724,21 @@
                     icon: ".",
                     key: "L"
                 }, {
-                    text: "Hmm",
-                    icon: "K",
-                    key: "Q"
-                }, {
-                    text: "You",
-                    icon: "👆",
-                    key: "O"
-                }, {
                     text: "Me",
                     icon: "👇",
                     key: "I"
+                }, {
+                    text: "You",
+                    icon: "👆",
+                    key: "E"
                 }, {
                     text: "Looser",
                     icon: "🤡",
                     key: "J"
                 }, {
-                    text: "Sigma",
-                    icon: "😎",
-                    key: "V"
+                    text: "Hmm",
+                    icon: "K",
+                    key: "Q"
                 }], this.tips_test = "Destroy asteroids", this.tips = [t("Destroy asteroids"), t("Collect gems to upgrade your ship"), t("Fight and don't die!")]
             }
             return extend(i, e), i.prototype.IlI0I = function(t) {
@@ -12851,22 +12859,6 @@
                     text: "Sorry",
                     icon: "¡",
                     key: "S"
-                }, {
-                    text: "You",
-                    icon: "👆",
-                    key: "O"
-                }, {
-                    text: "Me",
-                    icon: "👇",
-                    key: "I"
-                }, {
-                    text: "Looser",
-                    icon: "🤡",
-                    key: "J"
-                }, {
-                    text: "Sigma",
-                    icon: "😎",
-                    key: "V"
                 }], this.teams = [], this.teamboards = [], this.max_enter_time = 2700, this.max_enter_players = 60, this.infinite_base_lives = !1, this.tips_test = "Win the game by destroying the enemy bases", this.tips = [t("Collect gems to upgrade your ship"), t("Donate gems to your base to upgrade it and access higher tier ships"), t("Win the game by destroying the enemy bases")]
             }
             return extend(i, e), i.prototype.getWeaponStoreName = function() {
@@ -17641,10 +17633,10 @@
                 var s, l, n, a, o, r, h, u, d, I;
                 switch (this.finish) {
                     case "alloy":
-                        s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "#68A"), s.addColorStop(.5, "#FFF"), s.addColorStop(.5, "#765"), s.addColorStop(1, "#CCC");
+                        s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "#ababab"), s.addColorStop(.5, "#ababab"), s.addColorStop(.5, "#ababab"), s.addColorStop(1, "#ababab");
                         break;
                     case "titanium":
-                        s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "#444"), s.addColorStop(.5, "#AAA"), s.addColorStop(.5, "#444"), s.addColorStop(1, "#111");
+                        s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "#454545"), s.addColorStop(.5, "#454545"), s.addColorStop(.5, "#454545"), s.addColorStop(1, "#454545");
                         break;
                     case "gold":
                         s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "hsl(40,100%,50%)"), s.addColorStop(.5, "hsl(40,100%,80%)"), s.addColorStop(.5, "hsl(20,100%,30%)"), s.addColorStop(1, "hsl(40,100%,50%)");
@@ -17728,7 +17720,7 @@
                             t.fillStyle = "hsl(200,50%,20%)";
                             break;
                         case "youtube":
-                            t.fillStyle = "#1125bb";
+                            t.fillStyle = "#B11";
                             break;
                         case "paw":
                             t.fillStyle = "#DA5";
@@ -17907,8 +17899,8 @@
                     discord: "Discord",
                     medic: "Medic",
                     blank: "Blank",
-                    seasonal: "Seasonal,
-                    sigma:    "sigma",
+                    seasonal: "Seasonal",
+                    sigma: "Sigma",
                 },
                 finish: {
                     zinc: "Zinc",

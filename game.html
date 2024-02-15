@@ -10644,7 +10644,7 @@ input[type=range]:focus::-ms-fill-upper{background:hsl(200,60%,55%)}.github-fork
                 this.id = t, this.name = e, this.custom_game_name = this.name, this.custom_color = !0, this.radar_shows_leader = !0, this.max_enter_time = 2700, this.max_enter_players = 30, this.options = {
                     friction_ratio: 1,
                     speed_mod: 1
-                }, this.rotate_mines = !1, this.radar_zoom = 2, this.soundtrack = "procedurality.mp3", this.respawn_delay = 5e3, this.OOI1l = !0, this.anonymous_ships = !1, this.spectate = !1, this.spectate_ship = 1, this.custom_game_allowed = !0, this.show_weaponsbar = !0, this.restricted_weapons_store = !1, this.show_highscore = !0, this.infinite_base_lives = !0, this.O111l = !0, this.sharing_enabled = !0, this.I11OO = I11OO, this.llOl1 = llOl1
+                }, this.rotate_mines = !1, this.radar_zoom = -2, this.soundtrack = "procedurality.mp3", this.respawn_delay = 5e3, this.OOI1l = !0, this.anonymous_ships = !1, this.spectate = !1, this.spectate_ship = 1, this.custom_game_allowed = !0, this.show_weaponsbar = !0, this.restricted_weapons_store = !1, this.show_highscore = !0, this.infinite_base_lives = !0, this.O111l = !0, this.sharing_enabled = !0, this.I11OO = I11OO, this.llOl1 = llOl1
             }
             return e.prototype.entered = function(e) {
                 if (this.options.strafe > 0) return setTimeout(function(e) {
@@ -10669,7 +10669,7 @@ input[type=range]:focus::-ms-fill-upper{background:hsl(200,60%,55%)}.github-fork
             }, e.prototype.getWeaponStoreName = function() {
                 return t("Weapon Store")
             }, e.prototype.setOptions = function(t) {
-                if (this.options = t, null == this.options.friction_ratio && (this.options.friction_ratio = 1), null == this.options.speed_mod && (this.options.speed_mod = 1), this.options.map_size > 120 && (this.radar_zoom = 4), null != this.options.ships && this.parseShips(this.options), "team" === this.id && this.options.max_players >= 200 && (this.aow = !0), null != this.options.vocabulary) return this.vocabulary = this.options.vocabulary
+                if (this.options = t, null == this.options.friction_ratio && (this.options.friction_ratio = 1), null == this.options.speed_mod && (this.options.speed_mod = 1), this.options.map_size > 200 && (this.radar_zoom = -4), null != this.options.ships && this.parseShips(this.options), "team" === this.id && this.options.max_players >= 200 && (this.aow = !0), null != this.options.vocabulary) return this.vocabulary = this.options.vocabulary
             }, e.prototype.acceptChat = function(t, e) {
                 return !0
             }, e.prototype.fixPositions = function() {}, e.prototype.asteroidsDensityModifier = function(t, e) {
